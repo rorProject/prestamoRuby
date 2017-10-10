@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Cantidad_a_prestar: 1
+  Deuda: 1
+  Cantidad_de_prestamos: 1
+  Cuotas: 1
+
+two:
+  Cantidad_a_prestar: 1
+  Deuda: 1
+  Cantidad_de_prestamos: 1
+  Cuotas: 1

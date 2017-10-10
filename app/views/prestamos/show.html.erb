@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cantidad a prestar:</strong>
+  <%= @prestamo.Cantidad_a_prestar %>
+</p>
+
+<p>
+  <strong>Deuda:</strong>
+  <%= @prestamo.Deuda %>
+</p>
+
+<p>
+  <strong>Cantidad de prestamos:</strong>
+  <%= @prestamo.Cantidad_de_prestamos %>
+</p>
+
+<p>
+  <strong>Cuotas:</strong>
+  <%= @prestamo.Cuotas %>
+</p>
+
+<%= link_to 'Edit', edit_prestamo_path(@prestamo) %> |
+<%= link_to 'Back', prestamos_path %>
