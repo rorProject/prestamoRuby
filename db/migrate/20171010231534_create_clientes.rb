@@ -8,7 +8,6 @@ class CreateClientes < ActiveRecord::Migration[5.1]
       t.string :Numero
       t.string :Telefono
       t.string :Email
-
       t.timestamps
     end
   end
