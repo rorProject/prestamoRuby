@@ -10,9 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171010223047) do
+ActiveRecord::Schema.define(version: 20171010231856) do
 
-  create_table "rubyon_rails", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "clientes", force: :cascade do |t|
+    t.string "Nombre"
+    t.string "Apellido"
+    t.string "Direccion"
+    t.integer "Piso"
+    t.string "Numero"
+    t.string "Telefono"
+    t.string "Email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "prestamos", force: :cascade do |t|
+    t.integer "Cantidad_a_prestar"
+    t.integer "Deuda"
+    t.integer "Cantidad_de_prestamos"
+    t.integer "Cuotas"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
